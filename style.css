@@ -1,0 +1,60 @@
+:root {
+  --primary-color: coral;
+  --secondary-color: brown;
+}
+header {
+  text-align: center;
+  color: var(--primary-color);
+  margin: auto;
+}
+
+.container {
+  text-align: center;
+  width: 500px;
+  margin: auto auto;
+}
+
+label {
+  color:  var(--primary-color);
+}
+
+label,
+input {
+  display: block;
+  margin-top: 1.5rem;
+  width: 100%;
+
+}
+
+
+
+input {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--secondary-color);
+  font-size: large;
+  margin: 1rem 0;
+}
+
+
+
+#submit-btn{
+  background-color:  var(--primary-color);
+  border: 2px solid var(--secondary-color);
+  color: white;
+  padding:1rem 1rem;
+  border-radius: 0.5rem;
+  font-size: large;
+  margin: auto;
+  display: block;
+}
+
+#output-container {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-size: larger;
+}
