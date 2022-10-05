@@ -20,6 +20,16 @@ function showoutput(message) {
     output.innerHTML = message;
   }
 function handleclick(){
+  if(initialcost.value!=''&&quantity.value!=''&&currentprice.value!=''){
+    if(initialcost.value>0&&quantity.value>0&&currentprice.value>=0){
+
+    
     calculateprofitloss(initialcost.value,quantity.value,currentprice.value)
+    }else{
+      showoutput( `Enter cost and quantity greater than 0  current price greater than or equal to 0`);
+    }
+  }else{
+    showoutput( `Enter value in all fields`);
+  }
 }
 button.addEventListener("click",handleclick);

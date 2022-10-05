@@ -19,7 +19,7 @@
           class="input"
           type="number"
           id="initial-price"
-          placeholder="Enter Initial Price Here"
+          placeholder="Enter Initial Price Here" min="1"
         
       /></label>
       <label class="input-label" for="stocks-quantity">
@@ -29,7 +29,7 @@
           type="number"
           id="stocks-quantity"
           placeholder="Enter the Number of Stocks bought"
-        />
+          min="1"
       </label>
       <label class="input-label" for="current-price"
         >Current Price
@@ -38,6 +38,7 @@
           type="number"
           id="current-price"
           placeholder="Enter the Current Price of the stocks"
+          min="0"
       /></label>
 
       <button id="submit-btn" class="btn-check">Tell Me!!</button>
