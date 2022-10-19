@@ -4,8 +4,10 @@ const currentprice=document.querySelector("#current-price")
 const button=document.querySelector("#submit-btn")
 const output=document.querySelector(".output")
 function calculateprofitloss(initial,quantity,current){
-   
-if(current>initial){
+   if(initial=current){
+    showoutput( `Hey, Initial and current price is the same , so no profit or loss`);
+   }
+else if(current>initial){
  const profitamt=(current-initial)*quantity;
  const profitpercent=(profitamt/initial)*100
  showoutput( `Hey, the profit is ${profitamt} and the percent is ${profitpercent}%`);
