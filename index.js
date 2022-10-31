@@ -9,12 +9,12 @@ function calculateprofitloss(initial,quantity,current){
    }
 else if(current>initial){
  const profitamt=(current-initial)*quantity;
- const profitpercent=(profitamt/initial)*100
+ const profitpercent=((profitamt/initial)*100).toFixed(2)
  showoutput( `Hey, the profit is ${profitamt} and the percent is ${profitpercent}%`);
 }
 else{
     const lossamt=(initial-current)*quantity;
-    const losspercent=(lossamt/initial)*100
+    const losspercent=((lossamt/initial)*100).toFixed(2)
       showoutput( `Hey, the loss is ${lossamt} and the percent is ${losspercent}%`);
 }
 }
